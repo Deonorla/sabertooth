@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ishimura";
+  src: url(./assets/fonts/Ishimura.otf);
+}
+
+@font-face {
+  font-family: "nuraga";
+  src: url(./assets/fonts/NuragaDemo-Regular.ttf);
+}
+
+@font-face {
+  font-family: "pirulen";
+  src: url(./assets/fonts/pirulen-rg.otf);
+}
+
+@font-face {
+  font-family: "public";
+  src: url(./assets/fonts/PublicSans-Regular.ttf);
+}
+
+@layer base {
+    .wrapper {
+        @apply w-11/12 mx-auto mt-16 max-w-6xl
+    }
+    html {
+        @apply text-[8px] md:text-[12px] lg:text-base scroll-smooth
+    }
+    li {
+      @apply mb-3
+    }
+}
+
+@keyframes shadowPulse {
+  0% {
+    text-shadow: 0px 0px 5px #BC2F2C;
+  }
+  50% {
+    text-shadow: 0px 0px 30px #BC2F2C;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #BC2F2C;
+  }
+}
+
+.text-shadow-pulse {
+  animation: shadowPulse 3s ease-in-out infinite;
+}

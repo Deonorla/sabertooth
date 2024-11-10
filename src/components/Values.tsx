@@ -26,31 +26,42 @@ const Values = () => {
             building blocks of a new era.
           </p>
           <ul className="text-left">
-            <li>
+            <li className="flex items-center">
               <img src={listIcon} alt="" className="w-5 h-5 mr-2 inline" />
-              <span className="font-bold">Flawlwess Design</span>– Seamless and
-              intuitive, our designs redefine the user experience.
+              <p>
+                <span className="font-bold">Flawlwess Design</span>– Seamless
+                and intuitive, our designs redefine the user experience.
+              </p>
             </li>
-            <li>
+            <li className="flex items-center">
               <img src={listIcon} alt="" className="w-5 h-5 mr-2 inline" />
-              <span className="font-bold">Peer-to-Peer Innovation</span>– True
-              decentralization, with user-first solutions.
+              <p>
+                <span className="font-bold">Peer-to-Peer Innovation</span>– True
+                decentralization, with user-first solutions.
+              </p>
             </li>
-            <li>
+            <li className="flex items-center">
               <img src={listIcon} alt="" className="w-5 h-5 mr-2 inline" />
-              <span className="font-bold">Community-Driven</span>– We build for
-              communities, with every project designed to foster engagement and
-              inclusion.
+              <p>
+                <span className="font-bold">Community-Driven</span>– We build
+                for communities, with every project designed to foster
+                engagement and inclusion.
+              </p>
             </li>
-            <li>
+            <li className="flex items-center">
               <img src={listIcon} alt="" className="w-5 h-5 mr-2 inline" />
-              <span className="font-bold">Blockchain Excellence</span>-
-              Leveraging the latest Web 3 technology to push boundaries
+              <p>
+                <span className="font-bold">Blockchain Excellence</span>-
+                Leveraging the latest Web 3 technology to push boundaries
+              </p>
             </li>
-            <li>
+            <li className="flex items-center">
               <img src={listIcon} alt="" className="w-5 h-5 mr-2 inline" />
-              <span className="font-bold">Breakthrough Impact</span>– Developing
-              industry-first solutions that address real-world challenges.
+              <p>
+                <span className="font-bold">Breakthrough Impact</span>–
+                Developing industry-first solutions that address real-world
+                challenges.
+              </p>
             </li>
           </ul>
         </div>
@@ -62,7 +73,11 @@ const Values = () => {
           variants={fromTheRight}
           transition={{ duration: 1 }}
         >
-          <img src={Sabertooth} alt="" className="max-md:w-[250px] md:max-xl:w-[400px] "/>
+          <img
+            src={Sabertooth}
+            alt=""
+            className="max-md:w-[250px] md:max-xl:w-[400px] "
+          />
         </motion.div>
       </div>
     </div>

@@ -27,7 +27,7 @@
         @apply w-11/12 mx-auto mt-16 max-w-6xl
     }
     html {
-        @apply text-[8px] md:text-[12px] lg:text-base scroll-smooth
+        @apply text-[9.5px] md:text-[12px] lg:text-base scroll-smooth
     }
     li {
       @apply mb-3
@@ -49,3 +49,4 @@
 .text-shadow-pulse {
   animation: shadowPulse 3s ease-in-out infinite;
 }
+

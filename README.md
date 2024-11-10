@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+# Sabertooth 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+***
 
-Currently, two official plugins are available:
+Sabertooth was founded out of a desire to use Web 3's potential to develop solutions that strengthen communities. We have created and introduced three ground-breaking projects since our founding: Kawak, Gamebloc, and Bugbounty. From safe cryptocurrency transactions to community-driven gaming competitions and blockchain-based security improvements, each one exemplifies our dedication to peer-to-peer innovation and crowd-focused design. Our goal is to set the standard for a future that is more decentralized and connected.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features and Values
 
-## Expanding the ESLint configuration
+***
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Our strategy at Sabertooth is based on a few fundamental ideas that distinguish us. Our initiatives represent the foundation of a new era, not just finished goods.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+-**Flawless Designs:** Seamless and intuitive, our designs redefine the user experience.
+-**Peer-to-Peer Innovation:** True decentralization, with user-first solutions.
+-**Blockchain Excellence:** Leveraging the latest Web 3 technology to push boundaries
+-**Community-Driven:** We build for communities, with every project designed to foster engagement and inclusion.
+-**Breakthrough Impact:** Developing industry-first solutions that address real-world challenges.

@@ -16,7 +16,7 @@ const Values = () => {
             Our Core Values
           </h5>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 max-md:text-xl">
           <h1 className="text-4xl font-pirulen">
             The <span className="text-crimson">SaberTooth</span> Advantage
           </h1>

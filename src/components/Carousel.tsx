@@ -60,77 +60,81 @@ const Carousel = () => {
         spaceBetween={50}
         slidesPerView={3}
       > */}
-      {ProjectCard.map((card , index) => { if (index %2 ===0 || window.matchMedia("(max-width: 767px)").matches) return (
-        // <SwiperSlide key={index}>
-        <div className="flex flex-col gap-12">
-          <div className="flex justify-center">
-            {/* <img className="w-56" src={card.icon} alt="" /> */}
-          </div>
-          <div className="flex flex-col-reverse md:flex-row w-full items-center gap-10 md:justify-between">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              variants={fromTheBottom}
-              transition={{ duration: 1 }}
-            >
-              <div className="flex flex-col gap-6 md:w-[337px] lg:w-[450px]">
-                <h1 className="font-pirulen text-4xl">{card.product}</h1>
-                <p>{card.description}</p>
-                <a href={card.link} target="_blank">
-                  <div>
-                    <Button desc={card.bdesc} />
-                  </div>
-                </a>
+      {ProjectCard.map((card, index) => {
+        if (index % 2 === 0 || window.matchMedia("(max-width: 767px)").matches)
+          return (
+            // <SwiperSlide key={index}>
+            <div className="flex flex-col gap-12">
+              <div className="flex justify-center">
+                {/* <img className="w-56" src={card.icon} alt="" /> */}
               </div>
-            </motion.div>
-            <div className="md:w-1/2 max-md:w-[300px]">
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                variants={fromTheBottom}
-                transition={{ duration: 0.75 }}
-              >
-                <img src={card.picture} alt="" />
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      )
-      else if(index % 2 === 1) return (
-        <div className="flex flex-col gap-12">
-          <div className="flex justify-center">
-            {/* <img className="w-56" src={card.icon} alt="" /> */}
-          </div>
-          <div className="flex flex-col-reverse md:flex-row w-full items-center gap-10 md:justify-between">
-            <div className="md:w-1/2 max-md:w-[300px]">
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                variants={fromTheBottom}
-                transition={{ duration: 0.75 }}
-              >
-                <img src={card.picture} alt="" />
-              </motion.div>
-            </div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              variants={fromTheBottom}
-              transition={{ duration: 1 }}
-            >
-              <div className="flex flex-col gap-6 md:w-[337px] lg:w-[450px]">
-                <h1 className="font-pirulen text-4xl">{card.product}</h1>
-                <p>{card.description}</p>
-                <a href={card.link} target="_blank">
-                  <div>
-                    <Button desc={card.bdesc} />
+              <div className="flex flex-col-reverse md:flex-row w-full items-center gap-10 md:justify-between">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={fromTheBottom}
+                  transition={{ duration: 1 }}
+                >
+                  <div className="flex flex-col gap-6 md:w-[337px] lg:w-[450px]">
+                    <h1 className="font-pirulen text-4xl">{card.product}</h1>
+                    <p className="max-md:text-xl">{card.description}</p>
+                    <a href={card.link} target="_blank">
+                      <div>
+                        <Button desc={card.bdesc} />
+                      </div>
+                    </a>
                   </div>
-                </a>
+                </motion.div>
+                <div className="md:w-1/2 max-md:w-[300px]">
+                  <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={fromTheBottom}
+                    transition={{ duration: 0.75 }}
+                  >
+                    <img src={card.picture} alt="" />
+                  </motion.div>
+                </div>
               </div>
-            </motion.div>
-          </div>
-        </div>
-      )})}
+            </div>
+          );
+        else if (index % 2 === 1)
+          return (
+            <div className="flex flex-col gap-12">
+              <div className="flex justify-center">
+                {/* <img className="w-56" src={card.icon} alt="" /> */}
+              </div>
+              <div className="flex flex-col-reverse md:flex-row w-full items-center gap-10 md:justify-between">
+                <div className="md:w-1/2 max-md:w-[300px]">
+                  <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={fromTheBottom}
+                    transition={{ duration: 0.75 }}
+                  >
+                    <img src={card.picture} alt="" />
+                  </motion.div>
+                </div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={fromTheBottom}
+                  transition={{ duration: 1 }}
+                >
+                  <div className="flex flex-col gap-6 md:w-[337px] lg:w-[450px]">
+                    <h1 className="font-pirulen text-4xl">{card.product}</h1>
+                    <p className="max-md:text-xl">{card.description}</p>
+                    <a href={card.link} target="_blank">
+                      <div>
+                        <Button desc={card.bdesc} />
+                      </div>
+                    </a>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          );
+      })}
     </div>
   );
 };

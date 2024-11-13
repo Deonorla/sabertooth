@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       outDir: "client/dist",
+      assetsDir: "assets",
     },
   };
 });

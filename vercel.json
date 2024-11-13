@@ -1,5 +1,9 @@
 {
   "version": 2,
+
+  "build": {
+    "ignoreBuildErrors": true
+  },
   "builds": [
     {
       "src": "/index.js",
@@ -11,9 +15,6 @@
       "config": {
         "distDir": "build"
       }
-    },
-    {
-      "ignoreBuildErrors": true
     }
   ],
   "routes": [

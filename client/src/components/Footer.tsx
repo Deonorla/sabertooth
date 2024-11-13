@@ -11,7 +11,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 const Footer = () => {
   const MySwal = withReactContent(Swal);
   const [email, setEmail] = useState("");
-  const [color, setColor] = useState("#ffffff");
+  const color = "#ffffff";
   const [loading, setLoading] = useState(false);
   const [isValid, setIsValid] = useState(true);
 
@@ -56,7 +56,6 @@ const Footer = () => {
 
   const handleSubmit = () => {
     if (email) {
-      setColor("#fff");
       setLoading(true);
       fetch(`/api/memberAdd?email=${email}`)
         .then((res) => {

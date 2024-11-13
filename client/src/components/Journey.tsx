@@ -17,7 +17,7 @@ const Journey = () => {
         <h1 className="text-4xl font-pirulen">
           Our Journey and <span className="text-crimson">Purpose</span>
         </h1>
-        <p>
+        <p className="max-md:text-xl ">
           Sabertooth was born from a passion for leveraging the power of Web 3
           to create solutions that empower communities. Since our inception,
           we’ve developed and launched three transformative projects: Kawak,

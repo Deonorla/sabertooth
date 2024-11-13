@@ -24,6 +24,9 @@ export default {
         "myGradient" : 'linear-gradient(90deg, rgba(208,54,50,1) 0%, rgba(73,13,12,1) 100%);',
         "reverseGradient" : 'linear-gradient(90deg, rgba(73,13,12,1) 0%, rgba(208,54,50,1) 100%)'
       },
+      listStyleImage: {
+        claws: 'url("./src/assets/game-icons_circle-claws.png")',
+      },
     },
   },
   plugins: [

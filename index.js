@@ -14,7 +14,7 @@ const app = express();
 const mailchimp = new Mailchimp(mc_api_key);
 
 // Serve static files from React app
-app.use(express.static(path.resolve(__dirname, "client/build")));
+app.use(express.static(path.resolve(__dirname, "client/dist")));
 
 // API endpoint
 app.get("/api/memberAdd", (req, res) => {

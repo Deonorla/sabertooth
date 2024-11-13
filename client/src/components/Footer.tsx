@@ -56,6 +56,7 @@ const Footer = () => {
 
   const handleSubmit = () => {
     if (email) {
+      setColor("#fff");
       setLoading(true);
       fetch(`/api/memberAdd?email=${email}`)
         .then((res) => {

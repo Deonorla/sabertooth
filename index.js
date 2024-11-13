@@ -1,7 +1,11 @@
-const express = require("express");
-const path = require("path");
-const Mailchimp = require("mailchimp-api-v3");
-require("dotenv").config({ path: __dirname + "/variables.env" });
+import express from "express";
+import path from "path";
+import Mailchimp from "mailchimp-api-v3";
+import dotenv from "dotenv";
+
+const __dirname = new URL(".", import.meta.url).pathname;
+
+dotenv.config({ path: path.resolve(__dirname, ".env") });
 
 const mc_api_key = process.env.MAILCHIMP_API_KEY;
 const list_id = process.env.LIST_ID;

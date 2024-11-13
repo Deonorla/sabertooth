@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
       "process.env.LIST_ID": JSON.stringify(env.LIST_ID),
     },
     build: {
-      outDir: "dist",
+      outDir: "client/dist",
     },
   };
 });

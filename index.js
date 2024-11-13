@@ -14,14 +14,7 @@ const app = express();
 const mailchimp = new Mailchimp(mc_api_key);
 
 // Serve static files from React app
-app.use(express.static(path.resolve(__dirname, "client/dist")));
-app.use((res, next) => {
-  res.setHeader(
-    "Content-Security-Policy",
-    "default-src 'none'; script-src 'self' https://vercel.live; style-src 'self'; img-src 'self';"
-  );
-  next();
-});
+app.use(express.static(path.resolve(__dirname, "build/dist")));
 
 // API endpoint
 app.get("/api/memberAdd", (req, res) => {

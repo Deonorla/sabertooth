@@ -2,16 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="./src/assets/Sabertoothmini.png"
-    />
+    <!-- Use absolute path for production assets -->
+    <link rel="icon" type="image/svg+xml" href="/assets/Sabertoothmini.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SABERTOOTH</title>
   </head>
   <body class="bg-[#0A090D]">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- After Vite build, the JavaScript entry file is inside dist/assets -->
+    <script type="module" src="/assets/main-xxx.js"></script>
   </body>
 </html>

@@ -14,7 +14,7 @@ const app = express();
 const mailchimp = new Mailchimp(mc_api_key);
 
 // Serve static files from React app
-app.use(express.static(path.resolve(__dirname, "build/dist")));
+app.use(express.static(path.resolve(__dirname, "client/dist")));
 
 // API endpoint
 app.get("/api/memberAdd", (req, res) => {
@@ -32,9 +32,7 @@ app.get("/api/memberAdd", (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  res.sendFile(
-    path.resolve(__dirname, "client/build", "/client/publicindex.html")
-  );
+  res.sendFile(path.resolve(__dirname, "client/dist", "/client/index.html"));
 });
 
 const port = process.env.PORT || 9001;

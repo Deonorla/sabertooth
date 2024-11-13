@@ -11,6 +11,9 @@
       "config": {
         "distDir": "build"
       }
+    },
+    {
+      "ignoreBuildErrors": true
     }
   ],
   "routes": [

@@ -59,20 +59,28 @@ const Footer = () => {
       setLoading(true);
       fetch(`/api/memberAdd?email=${email}`)
         .then((res) => {
-          if (res) {
-            res.json();
-            setLoading(false);
-            popUp();
-            setEmail("");
+          if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+          }
+
+          // Check if response is JSON
+          const contentType = res.headers.get("content-type");
+          if (contentType && contentType.includes("application/json")) {
+            return res.json(); // Parse as JSON only if it's JSON
+          } else {
+            throw new Error("Unexpected response format: expected JSON");
           }
         })
-        .then((res) => console.log(res))
+        .then((data) => {
+          console.log("Response data:", data); // Handle the JSON data
+          setLoading(false);
+          popUp(); // Show success popup
+          setEmail(""); // Clear email input
+        })
         .catch((err) => {
-          if (err) {
-            setLoading(false);
-            errorPopUp();
-            console.log(err);
-          }
+          setLoading(false);
+          errorPopUp(); // Show error popup
+          console.error("Error:", err);
         });
     }
   };
@@ -184,7 +192,7 @@ const Footer = () => {
             </button>
           </div>
           {!isValid && (
-            <div className="text-[.8rem] text-center w-full text-[#f73939] my-1 ">
+            <div className="text-[.8rem]  w-full text-[#f73939] my-1 ">
               Invalid address
             </div>
           )}

@@ -5,7 +5,7 @@ import Values from "./components/Values";
 import Footer from "./components/Footer";
 import BImg from "./assets/Background Image.png";
 import Carousel from "./components/Carousel";
-// import Team from "./components/Team";
+import Team from "./components/Team";
 import { motion } from "framer-motion";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         initial="hidden"
         whileInView="visible"
         variants={fromTheBottom}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
         viewport={{ once: true }}
       >
         <Main />
@@ -41,9 +41,9 @@ function App() {
       >
         <Journey />
       </motion.div>
-        <Values />
-        <Carousel />
-       {/* <Team /> */}
+      <Values />
+      <Carousel />
+      <Team />
       <Footer />
     </div>
   );

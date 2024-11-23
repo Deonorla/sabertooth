@@ -35,7 +35,7 @@ const Team = () => {
       <h1 className="font-pirulen text-4xl text-center ">
         MEET THE MINDS BEHIND <span className="text-crimson">SABERTOOTH</span>
       </h1>
-      <p className="text-center text-base w-11/12">
+      <p className="text-center text-xl w-11/12">
         Our team is our backbone. Each member brings unique expertise to
         delivering top-notch Web 3 solutions that serve real-world needs. With
         backgrounds in design, development, blockchain, and community

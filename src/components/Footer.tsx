@@ -104,7 +104,7 @@ const Footer = () => {
               <li>
                 <a
                   className="hover:text-crimson"
-                  href="https://cv4ma-4qaaa-aaaal-adntq-cai.icp0.io/"
+                  href="https://gamebloc.app/"
                   target="_blank"
                 >
                   Gamebloc <img className="inline w-5 h-5" src={Open} alt="" />

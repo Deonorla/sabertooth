@@ -33,7 +33,7 @@ const Carousel = () => {
         "Gamebloc, a decentralized startup,specializes in cutting edge web and mobile solutions tailored for gamers, gaming communities, and game developers. Our platform empowers gamers to host tournaments for their favorite games,and game developers can launch their creations through our innovative tournament system. Level up your gaming experience with Gamebloc!",
       bdesc: "Explore GameBloc",
       picture: GPic,
-      link: "https://cv4ma-4qaaa-aaaal-adntq-cai.icp0.io/",
+      link: "https://gamebloc.app/",
     },
     {
       icon: BLogo,
